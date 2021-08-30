@@ -1,0 +1,90 @@
+# Site Build Settings
+
+# Jekyll-paginate-v2 configuration
+#  pagination:
+#   enabled: true
+#   per_page: 5
+#   permalink: '/page/:num/'
+#   title: ':title - page :num of :max'
+#   limit: 0
+#   sort_field: 'date'
+#   sort_reverse: true
+
+# jekyll-paginate configuration
+# paginate:            5
+
+# Build settings
+markdown:            kramdown
+highlighter:         rouge
+# permalink:           none
+# plugins:             [jekyll-sitemap, jekyll-seo-tag]
+
+# Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
+title:		           'Election Officer Training (Jun 2021)'
+description:	       ''
+author:              'Office of Elections'
+
+# RSS 2.0 can be used instead of Atom by uncommenting following two lines
+#feed:
+#  path: rss-feed.xml
+
+# add collections
+
+collections_dir: collections
+
+collections:
+  new-eo:
+    output: true
+    title: "New and Experienced Election Officer Training"
+    permalink: /new-eo/:path
+    url: /new-eo
+  new-chief:
+    output: true
+    title: "New Chiefs and Assistant Chief Training"
+    permalink: /new-chief/:path
+    url: /new-chief
+  chiefs-briefing:
+    output: true
+    title: "Chiefs Briefing"
+    permalink: /chiefs-briefing/:path
+    url: /chiefs-briefing
+  ppe-specialist:
+    output: true
+    title: "PPE Specialist Training"
+    permalink: /ppe-specialist/:path
+    url: /ppe-specialist
+  cap-ballot-check-in:
+    output: true
+    title: "CAP Returned Ballot Check-In Training"
+    permalink: /cap-ballot-check-in/:path
+    url: /cap-ballot-check-in
+  cap-preprocessing:
+    output: true
+    title: "CAP Preprocessing Training"
+    permalink: /cap-preprocessing/:path
+    url: /cap-preprocessing
+  cap-eo-handcount:
+    output: true
+    title: "CAP Election Officer Handcount Training"
+    permalink: /cap-eo-handcount/:path
+    url: /cap-eo-handcount
+  cap-eo-ab:
+    output: true
+    title: "CAP Election Officer Absentee Training"
+    permalink: /cap-eo-ab/:path
+    url: /cap-eo-ab
+  cap-eo-ev:
+    output: true
+    title: "CAP Election Officer Early Voting Training"
+    permalink: /cap-eo-ev/:path
+    url: /cap-eo-ev
+
+
+# Permalinks
+permalink:           /:short_year/:month/:title
+baseurl: /jun-2021
+
+# Fix date/time generation
+timezone: America/New_York
+
+### Current domain: training.electionofficers.com
